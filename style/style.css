@@ -49,11 +49,14 @@ input:hover {
 i {
   color: hsl(223, 87%, 63%);
   margin: 2px;
+  cursor: pointer;
+}
+i:hover {
+  background-color: cyan;
 }
 p i {
   color: hsl(354, 100%, 66%);
 }
-
 .illustration {
   height: 80%;
   width: 50%;

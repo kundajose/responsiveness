@@ -54,27 +54,26 @@ i {
   color: hsl(223, 87%, 63%);
   cursor: pointer;
   margin: 5px;
-  /* padding-left: 2em; */
   border-radius: 50%;
   padding: 5px;
 }
 i:hover {
-  background-color: hsl(354, 100%, 66%);
+  background-color: hsl(223, 87%, 63%);
 }
 p i {
-  color: hsl(354, 100%, 66%);
+  color: hsl(223, 87%, 63%);
 }
 .illustration {
   height: 80%;
   width: 60%;
   margin: 20px;
 }
-/* style
-    height: 50%; of phone */
-@media screen and (max-width: 375px) {
+/* style of phone */
+@media only screen and (max-width: 375px) {
   body {
     height: 100vh;
     width: 85%;
+    background-color: chartreuse;
   }
   h1 {
     font-size: 30px;
@@ -87,7 +86,7 @@ p i {
     margin: 6px 12px;
   }
   footer p {
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 5px;
   }
   .illustration {
@@ -96,38 +95,50 @@ p i {
     font-size: 100%;
   }
   .logo {
-    padding-top: 10px;
-    padding-bottom: 1px;
+    padding-top: 20px;
     margin: 0px;
   }
   input {
     width: 92%;
     margin: 6px 12px;
   }
-  /* desk-top style */
 }
-/* @media screen and (min-width: 376px) {
+/* desk-top style */
+@media screen and (min-width: 376px) {
   body {
     height: 100vh;
     width: 100vw;
+    background-color: pink;
   }
   h1 {
     font-size: 30px;
   }
   button {
-    border-radius: 50%;
+    border-radius: 50px;
+    height: 30%;
     width: 30%;
-    height: 10%;
-    padding: 1%;
-  } 
+    padding: 2%;
+    margin: 6px 12px;
+  }
   .illustration {
     height: 50%;
     width: 95%;
     font-size: 100%;
   }
   .logo {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 1px;
     margin: 0px;
   }
-} */
+  input {
+    width: 30%;
+    margin: 6px 12px;
+    padding: 2%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  footer p {
+    padding-bottom: 10px;
+  }
+}

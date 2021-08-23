@@ -27,12 +27,15 @@ span {
 p {
   text-align: center;
   font-size: 300;
+  color: gray;
 }
 input {
   border-radius: 50px;
   padding: 10px;
   font-family: Libre Franklin;
   background-color: white;
+  outline: none;
+  width: 200px;
 }
 button {
   background-color: hsl(223, 87%, 63%);
@@ -46,9 +49,9 @@ button {
   height: 100%;
   background-color: hsl(223, 87%, 63%);
 }
-button:hover,
-input:hover {
-  background-color: brown;
+button:hover {
+  background-color: hsl(223, 78%, 75%);
+  color: white;
 }
 i {
   color: hsl(223, 87%, 63%);
@@ -56,24 +59,29 @@ i {
   margin: 5px;
   border-radius: 50%;
   padding: 5px;
+  border: 1px solid grey;
+  background-color: white;
 }
 i:hover {
   background-color: hsl(223, 87%, 63%);
-}
-p i {
-  color: hsl(223, 87%, 63%);
+  color: white;
 }
 .illustration {
   height: 80%;
   width: 60%;
   margin: 20px;
 }
+#result {
+  color: red;
+  font-size: 15px;
+  margin-left: -120px;
+  margin-top: -4px;
+}
 /* style of phone */
 @media only screen and (max-width: 375px) {
   body {
     height: 100vh;
     width: 85%;
-    background-color: chartreuse;
   }
   h1 {
     font-size: 30px;
@@ -104,7 +112,7 @@ p i {
   }
 }
 /* desk-top style */
-@media screen and (min-width: 376px) {
+/* @media screen and (min-width: 376px) {
   body {
     height: 100vh;
     width: 100vw;
@@ -141,4 +149,4 @@ p i {
   footer p {
     padding-bottom: 10px;
   }
-}
+} */

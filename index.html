@@ -19,18 +19,23 @@
 
     </header>
     <form>
-        <input type="email" placeholder="Your Email Adress " required />
-        <button type="submit">Notify Me</button>
+        <!-- <input type="email" placeholder="Your Email Adress" id="email" required />
+        <button type="submit" id="submit">Notify Me</button> -->
+        <div class="validation">
+            <input id="email" class="email" type="email" placeholder="Your email">
+            <button class="button" type="subscribe" onclick="validateEmail()">Notify Me</button>
+        </div>
+        <h4 id="result"></h4>
     </form>
 
     <img src="./images/images/illustration-dashboard.png" alt="illustration" class="illustration" />
     <footer>
-
         <i class="fab fa-facebook-f"></i>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
-        <p><i class="far fa-copyright"></i>copy:copyright ping+All rights reserved.</p>
+        <p>&copy;copyright ping+All rights reserved.</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
